@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:my_portfolio_app/screen/home/mobile/home_view_model.dart';
+import 'package:my_portfolio_app/screen/view_model/home_view_model.dart';
 
 class HomeDesktopProfile extends HookConsumerWidget {
   const HomeDesktopProfile({Key? key}) : super(key: key);
