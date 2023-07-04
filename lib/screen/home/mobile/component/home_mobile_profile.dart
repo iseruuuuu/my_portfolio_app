@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:my_portfolio_app/screen/home/mobile/home_view_model.dart';
 
-class HomeMobileProfile extends StatelessWidget {
+class HomeMobileProfile extends HookConsumerWidget {
   const HomeMobileProfile({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    useEffect(
+      () {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          ref.read(homeViewModelProvider().notifier).fetch();
+        });
+        return null;
+      },
+      const [],
+    );
+    final age = ref.read(HomeViewModelProvider());
     return FittedBox(
       child: Column(
         children: [
@@ -29,10 +42,9 @@ class HomeMobileProfile extends StatelessWidget {
             title: 'ニックネーム',
             description: 'いせりゅー',
           ),
-          const HomeMobileTitle(
+          HomeMobileTitle(
             title: '年齢',
-            //TODO 現在の日付を取得する。
-            description: '23歳(2023年現在)',
+            description: age,
           ),
           const HomeMobileTitle(
             title: '現職',
