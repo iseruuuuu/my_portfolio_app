@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio_app/screen/home/mobile/component/home_mobile_career.dart';
+import 'package:my_portfolio_app/screen/home/mobile/component/home_mobile_footer.dart';
 import 'package:my_portfolio_app/screen/home/mobile/component/home_mobile_header.dart';
 import 'package:my_portfolio_app/screen/home/mobile/component/home_mobile_hobby.dart';
 import 'package:my_portfolio_app/screen/home/mobile/component/home_mobile_introduce.dart';
@@ -21,6 +22,7 @@ class MobileHomeScreen extends StatelessWidget {
             HomeMobileIntroduce(),
             HomeMobileHobby(),
             HomeMobileCareer(),
+            HomeMobileFooter(),
           ],
         ),
       ),
