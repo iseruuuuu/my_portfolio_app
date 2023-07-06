@@ -15,12 +15,11 @@ class HomeDesktopSNS extends StatelessWidget {
             'SNS',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 40,
+              fontSize: 25,
             ),
           ),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+        Wrap(
           children: [
             Link(
               uri: Uri.tryParse('https://github.com/iseruuuuu'),
@@ -30,12 +29,11 @@ class HomeDesktopSNS extends StatelessWidget {
                   onPressed: openLink,
                   icon: const Icon(
                     AntDesign.github,
-                    size: 50,
+                    size: 35,
                   ),
                 );
               },
             ),
-            const SizedBox(width: 30),
             Link(
               uri: Uri.tryParse('https://twitter.com/isekiryu'),
               target: LinkTarget.blank,
@@ -45,12 +43,11 @@ class HomeDesktopSNS extends StatelessWidget {
                   icon: const Icon(
                     AntDesign.twitter,
                     color: Colors.lightBlue,
-                    size: 50,
+                    size: 35,
                   ),
                 );
               },
             ),
-            const SizedBox(width: 30),
             Link(
               uri: Uri.tryParse(
                 'https://apps.apple.com/jp/developer/ryutaro-iseki/id1544199624',
@@ -62,12 +59,11 @@ class HomeDesktopSNS extends StatelessWidget {
                   icon: const Icon(
                     FontAwesome.apple,
                     color: Colors.grey,
-                    size: 50,
+                    size: 35,
                   ),
                 );
               },
             ),
-            const SizedBox(width: 30),
             Link(
               uri: Uri.tryParse(
                 'https://play.google.com/store/apps/developer?id=ryutaro+iseki',
@@ -79,7 +75,7 @@ class HomeDesktopSNS extends StatelessWidget {
                   icon: const Icon(
                     Ionicons.ios_logo_google_playstore,
                     color: Colors.green,
-                    size: 50,
+                    size: 35,
                   ),
                 );
               },
