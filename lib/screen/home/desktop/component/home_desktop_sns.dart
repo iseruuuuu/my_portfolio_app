@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:url_launcher/link.dart';
 
 class HomeDesktopSNS extends StatelessWidget {
@@ -28,7 +27,7 @@ class HomeDesktopSNS extends StatelessWidget {
                 return IconButton(
                   onPressed: openLink,
                   icon: const Icon(
-                    AntDesign.github,
+                    Icons.settings_input_composite,
                     size: 35,
                   ),
                 );
@@ -41,7 +40,7 @@ class HomeDesktopSNS extends StatelessWidget {
                 return IconButton(
                   onPressed: openLink,
                   icon: const Icon(
-                    AntDesign.twitter,
+                    Icons.settings_input_composite,
                     color: Colors.lightBlue,
                     size: 35,
                   ),
@@ -57,7 +56,7 @@ class HomeDesktopSNS extends StatelessWidget {
                 return IconButton(
                   onPressed: openLink,
                   icon: const Icon(
-                    FontAwesome.apple,
+                    Icons.settings_input_composite,
                     color: Colors.grey,
                     size: 35,
                   ),
@@ -73,7 +72,7 @@ class HomeDesktopSNS extends StatelessWidget {
                 return IconButton(
                   onPressed: openLink,
                   icon: const Icon(
-                    Ionicons.ios_logo_google_playstore,
+                    Icons.settings_input_composite,
                     color: Colors.green,
                     size: 35,
                   ),
